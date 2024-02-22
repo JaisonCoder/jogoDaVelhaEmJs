@@ -2,23 +2,46 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 .conteiner{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
-    height: 700px;
-    background-color: rgb(56, 58, 58);
-
+    box-shadow: 3px 3px 13px gray;
+    padding: 30px;
+    margin-top: 180px;
+    border-radius: 10%;
 }
+
 .quadrado{
-    
-    width: 200px;
-    height: 200px;
-    background-color: rgb(197, 197, 197);
+    width: 150px;
+    height: 150px;
+    background-color: rgb(235, 232, 232);
+    box-shadow: 3px 3px 13px gray;
     font-size: 90px;
     text-align: center;
-    color: rgb(255, 0, 0);
-  
+    color: rgb(0, 0, 0);
+    border-radius: 30%;
+    transition: ease-in-out 1s;
+}
+.quadrado:hover{
+ cursor: pointer;
+ background-color: aquamarine;
+ transition: ease-in-out 0.2s;
+}
+#reinciar {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: none;
+    box-shadow: 3px 3px 13px gray;
+    border-radius: 50%;
+    
+}
+#reinciar:hover{
+    background-color: red;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
