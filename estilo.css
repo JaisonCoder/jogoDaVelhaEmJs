@@ -1,17 +1,26 @@
 body{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+header{
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 0;
+    display: block;
+    box-shadow: 3px 3px 13px gray;
+
+}
 
 .conteiner{
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 3px 3px 13px gray;
     padding: 30px;
-    margin-top: 180px;
+    margin: 20px 35%;
     border-radius: 10%;
 }
 
@@ -28,7 +37,7 @@ body{
 }
 .quadrado:hover{
  cursor: pointer;
- background-color: aquamarine;
+ background-color: rgb(112, 117, 115);
  transition: ease-in-out 0.2s;
 }
 #reinciar {
@@ -36,7 +45,7 @@ body{
     height: 100px;
     margin: 20px;
     border: none;
-    box-shadow: 3px 3px 13px gray;
+    box-shadow: 3px 3px 13px rgb(179, 178, 178);
     border-radius: 50%;
     
 }

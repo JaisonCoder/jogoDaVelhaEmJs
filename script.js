@@ -1,13 +1,12 @@
 var jogador = "x";
 var coresJogadas = Array.from({length:9}, () => "");
+var corJogadorX = "red";
+var corJogadorO = "blue";
 function alternarCor() {
     var quadrados = document.querySelectorAll(".quadrado");
     quadrados.forEach(function (celula, index) {
-        if (jogador === "x") {
-            celula.style.color = "blue";
-        } else if (jogador === "o") {
-            celula.style.color = "green";
-        }
+        celula.style.color = coresJogadas[index];
+        
     });
 
 }
@@ -18,8 +17,12 @@ function restartPage() {
 function verificarGanhador() {
     var quadrados = document.querySelectorAll(".quadrado");
     var valores = [];
-    quadrados.forEach(function (celula) {
+    quadrados.forEach(function (celula, index) {
         valores.push(celula.innerHTML);
+        if (celula.innerHTML !== ""){
+            coresJogadas[index] = celula.innerHTML === "x" ? corJogadorX : corJogadorO;
+        }
+        
     });
 
     var combinacoesVencedoras = [
@@ -49,11 +52,7 @@ function jogar(celula) {
     if (celula.innerHTML == "") {
         celula.innerHTML = jogador;
         verificarGanhador();
-        if (jogador == "x") {
-            jogador = "o";
-        } else {
-            jogador = "x"
-        }
+        jogador = jogador === "x" ? "o" : "x"; 
         alternarCor();
     }
 }
