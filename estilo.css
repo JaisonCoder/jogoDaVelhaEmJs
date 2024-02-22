@@ -41,7 +41,7 @@ body{
     
 }
 #reinciar:hover{
-    background-color: red;
+    background-color: rgb(247, 124, 124);
     transition: ease-in-out 0.2s;
     cursor: pointer;
 }
