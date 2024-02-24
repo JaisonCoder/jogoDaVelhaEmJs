@@ -1,30 +1,36 @@
-body{
+*{
+    margin: 0;
+    padding: 0
+}
+body {
     display: block;
     align-items: center;
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header{
+
+header {
+    color: aliceblue;
     text-align: center;
     padding: 1px;
     margin-bottom: 0;
     display: block;
-    box-shadow: 3px 3px 13px gray;
+   background-color: black;
 
 }
 
-.conteiner{
+.conteiner {
     width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 3px 3px 13px gray;
-    padding: 30px;
-    margin: 20px 10%;
-    border-radius: 10%;
+    padding: 34px;
+    margin: 20px auto;
+    border-radius: 2%;
 }
 
-.quadrado{
+.quadrado {
     width: 150px;
     height: 150px;
     background-color: rgb(235, 232, 232);
@@ -35,11 +41,13 @@ header{
     border-radius: 30%;
     transition: ease-in-out 1s;
 }
-.quadrado:hover{
- cursor: pointer;
- background-color: rgb(112, 117, 115);
- transition: ease-in-out 0.2s;
+
+.quadrado:hover {
+    cursor: pointer;
+    background-color: rgb(112, 117, 115);
+    transition: ease-in-out 0.2s;
 }
+
 #reinciar {
     width: 100px;
     height: 100px;
@@ -47,31 +55,113 @@ header{
     border: none;
     box-shadow: 3px 3px 13px rgb(179, 178, 178);
     border-radius: 50%;
-    
+
 }
-#reinciar:hover{
+
+#reinciar:hover {
     background-color: rgb(247, 124, 124);
     transition: ease-in-out 0.2s;
     cursor: pointer;
 }
-#contador{
+
+#contador {
     font-size: 20px;
-   background-color: rgb(248, 248, 248);
-   justify-content: center;
-   width: 150px;
-   box-shadow: 3px 3px 13px gray;
-   border-radius: 20px;
-   padding: 15px;
+    background-color: rgb(248, 248, 248);
+    justify-content: center;
+    width: 150px;
+    box-shadow: 3px 3px 13px gray;
+    border-radius: 20px;
+    padding: 15px;
 
 }
-.azul{
+
+.azul {
     color: blue;
     padding: 0;
 
 }
-.vermelho{
+
+.vermelho {
     color: red;
 }
-#contador span{
+
+#contador span {
     padding-bottom: 10px;
+}
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 1%;
+    color: aliceblue;
+    background-color: black;
+    height: 232px;
+    padding: 30px;
+}
+footer ul, a  {
+    list-style: none;
+    
+    color: aliceblue;
+}
+
+
+/* estilizaçao para dispositivos moveis */
+@media only screen and (max-width: 768px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 3%;
+        padding-bottom: 0%;
+        padding-top: 1%;
+    }
+
+    .conteiner {
+        width: 80%;
+        margin: auto;
+        display: block;
+       margin-top: 5%;
+    }
+    .Jogo{
+        width: 100%;
+        height: 100%;
+    }
+    .quadrado {
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+    }
+    
+    #reinciar {
+        width: 60px;
+        height: 60px;
+    }
+    
+    #contador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10 4%;
+        width: 90%;
+        height: 10%;
+        font-size: 15px;
+    }
+    
+    #contador span, h2 {
+        padding: 10px;
+    }
+    footer{
+        margin-top: 1%;
+        color: aliceblue;
+        background-color: black;
+        padding: 5%;
+        height: max-content;
+
+    }
+    footer ul, a  {
+        list-style: none;
+        color: aliceblue;
+    }
 }
