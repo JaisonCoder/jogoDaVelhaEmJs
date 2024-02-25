@@ -95,6 +95,7 @@ footer{
     color: aliceblue;
     background-color: black;
     height: 400px;
+    width: auto;
     padding: 30px;
 }
 footer ul, a  {
